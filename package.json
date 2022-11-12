@@ -7,7 +7,7 @@
   "license": "GNU",
 
   "scripts": {
-    "dev": "tsx watch src/server.js"
+    "dev": "tsx watch src/server.ts"
   },
 
  "dependencies": {
