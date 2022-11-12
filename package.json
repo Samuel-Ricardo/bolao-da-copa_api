@@ -5,17 +5,16 @@
   "repository": "git@github.com:Samuel-Ricardo/bolao-da-copa_api.git",
   "author": "samuel-ricardo <samuelricardoofficial@gmail.com>",
   "license": "GNU",
-
   "scripts": {
     "dev": "tsx watch src/server.ts"
   },
-
- "dependencies": {
+  "dependencies": {
+    "@prisma/client": "^4.6.1",
     "fastify": "^3.9.2",
     "typescript": "^3.8.4"
   },
-
   "devDependencies": {
+
     "tsx": "^2.12.1"
   }
 }
