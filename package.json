@@ -9,12 +9,14 @@
     "dev": "tsx watch src/server.ts"
   },
   "dependencies": {
+    "@fastify/cors": "^8.2.0",
     "@prisma/client": "^4.6.1",
     "fastify": "^3.9.2",
     "typescript": "^3.8.4"
   },
   "devDependencies": {
     "prisma": "^4.6.1",
+    "prisma-erd-generator": "^1.2.3",
     "tsx": "^2.12.1"
   }
 }
