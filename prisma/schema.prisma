@@ -30,6 +30,7 @@ model Participant {
   userId String
   poolId String
 
+  guesses    Guess[]
   pool Pool  @relation(fields: [poolId], references: [id])
 }
 
@@ -61,4 +62,6 @@ model Guess {
 
   participantId    String
   gameId           String
+
+  participant Participant @relation(fields: [participantId], references: [id])
 }
