@@ -20,12 +20,16 @@ model Pool {
   title   String  
   code    String @unique
   creadAt DateTime @default(now())
+
+  participants Participant[]
 }
 
 model Participant {
   id String @id @default(cuid())
   userId String
   poolId String
+
+  pool Pool  @relation(fields: [poolId], references: [id])
 }
 
 model User {
