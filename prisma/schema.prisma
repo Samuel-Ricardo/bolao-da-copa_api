@@ -16,6 +16,7 @@ datasource db {
 
 model Pool {
   id      String @id @default(cuid())
+  ownerId String?
   title   String  
   code    String @unique
   creadAt DateTime @default(now())
