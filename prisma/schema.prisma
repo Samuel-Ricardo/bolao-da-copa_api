@@ -44,5 +44,15 @@ model Game {
   fisrtTeamCountryCode  String
   secondTeamCountryCode String
 
-  
+
+}
+
+model Guess {
+  id String @id @default(cuid())
+
+  firstTeamPoints  Int
+  secondTeamPoints Int
+
+  participantId    String
+  gameId           String
 }
