@@ -36,3 +36,13 @@ model User {
   createdAt DateTime
   
 }
+
+model Game {
+  id String @id @default(cuid())
+  date DateTime
+
+  fisrtTeamCountryCode  String
+  secondTeamCountryCode String
+
+  
+}
