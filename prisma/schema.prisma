@@ -21,3 +21,12 @@ model Pool {
   code    String @unique
   creadAt DateTime @default(now())
 }
+
+model Participant {
+  id String @id @default(cuid())
+  userId String
+  poolId String
+
+  guesses String[] 
+
+}
