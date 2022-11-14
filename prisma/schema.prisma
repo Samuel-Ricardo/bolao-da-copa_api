@@ -22,6 +22,7 @@ model Pool {
   creadAt DateTime @default(now())
 
   participants Participant[]
+  owner        User? @relation(fields: [ownerId], references: [id]) 
 }
 
 model Participant {
@@ -39,6 +40,7 @@ model User {
   avatarUrl String?
   createdAt DateTime
   
+  ownPools Pool[]
 }
 
 model Game {
