@@ -33,6 +33,8 @@ model Participant {
   guesses    Guess[]
   user       User  @relation(fields: [userId], references: [id])
   pool       Pool  @relation(fields: [poolId], references: [id])
+
+  @@unique([userId, poolId])
 }
 
 model User {
@@ -40,7 +42,7 @@ model User {
   name      String 
   email     String
   avatarUrl String?
-  createdAt DateTime
+  createdAt DateTime @default(now())
   
   participatingAt Participant[]
   ownPools        Pool[]
@@ -53,7 +55,7 @@ model Game {
   fisrtTeamCountryCode  String
   secondTeamCountryCode String
 
-
+  guesses Guess[]
 }
 
 model Guess {
@@ -65,5 +67,6 @@ model Guess {
   participantId    String
   gameId           String
 
-  participant Participant @relation(fields: [participantId], references: [id])
+  participant      Participant @relation(fields: [participantId], references: [id])
+  game             Game        @relation(fields: [gameId]       , references: [id])
 }
