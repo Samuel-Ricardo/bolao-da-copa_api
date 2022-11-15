@@ -23,8 +23,8 @@ async function bootstrapi() {
 
         return {count: pools}
     })
-    fastify.get('/users/count', async () => {count: await prisma.user.count()})
-    fastify.get('/guesses/count', async () => {count: await prisma.guess.count()})
+    fastify.get('/users/count', async () => {return {count: await prisma.user.count()}})
+    fastify.get('/guesses/count', async () => {return {count: await prisma.guess.count()}})
     
     fastify.post('/pools', async (request, reply) => {
         const createPoolBody = z.object({
