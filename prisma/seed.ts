@@ -11,4 +11,19 @@ async function main() {
         }
     })
 
+    const pool = await prisma.pool.create({
+        data: {
+            title: "Example Pool",
+            code: 'BOL123',
+            ownerId: user.id,
+
+            participants: {
+                create: {
+                    userId: user.id,
+                }
+            }
+        }
+    })
+
+    
 }
