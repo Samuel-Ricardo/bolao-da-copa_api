@@ -21,6 +21,8 @@ async function bootstrapi() {
         return {count: pools}
     })
 
+    fastify.get('/users/count', async () => {count: await prisma.user.count()})
+
 await fastify.listen({port: 3333, /*host: '0.0.0.0'*/})
 }
 
