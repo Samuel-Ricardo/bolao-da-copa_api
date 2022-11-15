@@ -52,7 +52,7 @@ model Game {
   id String @id @default(cuid())
   date DateTime
 
-  fisrtTeamCountryCode  String
+  firstTeamCountryCode  String
   secondTeamCountryCode String
 
   guesses Guess[]
