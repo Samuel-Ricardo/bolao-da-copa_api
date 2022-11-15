@@ -12,7 +12,9 @@
     "@fastify/cors": "^8.2.0",
     "@prisma/client": "^4.6.1",
     "fastify": "^4.9.2",
-    "typescript": "^3.8.4"
+    "short-unique-id": "^4.4.4",
+    "typescript": "^3.8.4",
+    "zod": "^3.19.1"
   },
   "devDependencies": {
     "prisma": "^4.6.1",
