@@ -8,13 +8,14 @@
   "scripts": {
     "dev": "tsx watch src/server.ts"
   },
-  "prisma":{
+  "prisma": {
     "seed": "tsx prisma/seed.ts"
   },
   "dependencies": {
     "@fastify/cors": "^8.2.0",
+    "@fastify/jwt": "^6.4.0",
     "@prisma/client": "^4.6.1",
-    "fastify": "^4.9.2",
+    "fastify": "^4.10.2",
     "short-unique-id": "^4.4.4",
     "typescript": "^3.8.4",
     "zod": "^3.19.1"
