@@ -29,7 +29,9 @@ export async function poolRoutes(fastify: FastifyInstance){
         } catch (error) {
             await prisma.pool.create({ data: { title, code } })
         }
-        
+
         return response.status(201).send({code})
     })
+
+    
 }
