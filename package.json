@@ -6,22 +6,23 @@
   "author": "samuel-ricardo <samuelricardoofficial@gmail.com>",
   "license": "GNU",
   "scripts": {
-    "dev": "tsx watch src/server.ts"
+    "dev": "tsx watch src/server.ts",
+    "seed": "tsx prisma/seed.ts"
   },
   "prisma": {
     "seed": "tsx prisma/seed.ts"
   },
   "dependencies": {
     "@fastify/cors": "^8.2.0",
-    "@fastify/jwt": "^6.4.0",
-    "@prisma/client": "^4.6.1",
+    "@fastify/jwt": "^6.5.0",
+    "@prisma/client": "^4.10.1",
     "fastify": "^4.10.2",
     "short-unique-id": "^4.4.4",
     "typescript": "^3.8.4",
     "zod": "^3.19.1"
   },
   "devDependencies": {
-    "prisma": "^4.6.1",
+    "prisma": "^4.10.1",
     "prisma-erd-generator": "^1.2.3",
     "tsx": "^2.12.1"
   }
