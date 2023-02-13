@@ -33,9 +33,7 @@ export function guessRoutes(fastify: FastifyInstance){
             const guess = await prisma.
                 guess.findUnique({where:{participantId_gameId:{participantId: participant.id, gameId}}})
 
-            if(!guess) return reply.status(400).send({message: "You already sent a guess to this game on this pool."})
-//?            if(guess) return reply.status(400).send({message: "You already sent a guess to this game on this pool."})
-
+            if(guess) return reply.status(400).send({message: "You already sent a guess to this game on this pool."})
 
 
             const game = await prisma.game.findUnique({where:{id:gameId}})
