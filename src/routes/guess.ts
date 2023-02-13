@@ -5,7 +5,7 @@ import { z } from 'zod';
 
 export function guessRoutes(fastify: FastifyInstance){
     
-    fastify.get('/guesses/count', async () => await prisma.user.count());
+    fastify.get('/guesses/count', async () => {return {count: await prisma.user.count()}});
 
     fastify.post('/pools/:poolId/games/:gameId/guesses', 
         { onRequest: [authenticate]}, 
