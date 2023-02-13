@@ -4,7 +4,7 @@ import { prisma } from "../lib/prisma";
 import { authenticate } from '../plugins/authenticate';
 
 export async function gameRoutes (fastify: FastifyInstance){
-    fastify.get('/pools/:id/gmaes', { onRequest: [authenticate] },
+    fastify.get('/pools/:id/games', { onRequest: [authenticate] },
         async req => {
             const getPoolParams = z.object({id: z.string()})
 
