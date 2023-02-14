@@ -1,9 +1,10 @@
-import { FastifyInstance } from 'fastify';
+import { z } from 'zod';
 import { prisma } from "../lib/prisma";
 import { authenticate } from '../plugins/authenticate';
-import { z } from 'zod';
+import { FastifyInstance } from 'fastify';
 
-export function guessRoutes(fastify: FastifyInstance){
+
+export async function guessRoutes(fastify: FastifyInstance){
     
     fastify.get('/guesses/count', async () => {return {count: await prisma.user.count()}});
 
@@ -56,5 +57,4 @@ export function guessRoutes(fastify: FastifyInstance){
             return reply.status(201).send()
         }
     )
-
 }
