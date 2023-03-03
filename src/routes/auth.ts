@@ -9,17 +9,26 @@ export async function authRoutes(fastify: FastifyInstance) {
     	async request => {return {user: request.user}}
     )
 
-		fastify.post('/user', async request => {
-			
-			const createuserBody = z.object({ acces_token: z.string() })
+	fastify.post('/users', async request => {
+		
+      console.log("")
+      console.log({body: request.body})
 
-			const { acces_token } = createuserBody.parse(request.body)
+			const createuserBody = z.object({ access_token: z.string() })
+
+			const { access_token } = createuserBody.parse(request.body)
+
+    console.log("")
+    console.log({access_token})
 			
 			const userResponse = await fetch('https://www.googleapis.com/oauth2/v2/userinfo', {
 				method: 'GET', 
-				headers: { 'Authorization': `Bearer ${acces_token}` }
+				headers: { 'Authorization': `Bearer ${access_token}` }
 			})
-			
+		
+    console.log("")
+    console.log({userResponse})
+
 			const userData = await userResponse.json()
 
 			const userInfoSchema = z.object({
@@ -29,7 +38,11 @@ export async function authRoutes(fastify: FastifyInstance) {
 				picture: z.string().url()
 			})
 			const userInfo = userInfoSchema.parse(userData)
-			
+		
+    console.log("")
+    console.log({userInfo})
+
+
 			let user = await prisma.user.findUnique({
 				where: {
 					googleId: userInfo.id,
