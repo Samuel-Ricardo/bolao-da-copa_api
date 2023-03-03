@@ -12,7 +12,7 @@ async function bootstrapi() {
     await fastify.register(jwt, {secret: ENV.JWT_SECRET});
     await fastify.register(routes)
 
-await fastify.listen({port: 3333, /*host: '0.0.0.0'*/})
+await fastify.listen({port: 3333, host: '0.0.0.0'})
 }
 
 bootstrapi()
