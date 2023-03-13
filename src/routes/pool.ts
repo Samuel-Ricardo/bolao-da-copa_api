@@ -5,7 +5,7 @@ import ShortUniqueId from 'short-unique-id';
 import { authenticate } from '../plugins/authenticate';
 
 export async function poolRoutes(fastify: FastifyInstance){
-    fastify.get('/pool/count', async _ => {return {code: await prisma.pool.count()}})
+    fastify.get('/pool/count', async _ => {return {count: await prisma.pool.count()}})
 
     fastify.post('/pools',async (request, response) => {
         const createPoolBody = z.object({title: z.string()})
