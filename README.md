@@ -121,7 +121,52 @@
    
 #
 
-   
+<h2 id="app">
+  💻 | Application:
+</h2>
+
+> <a href="https://bolao-da-copa-xi.vercel.app/"> <img src="./readme_files/empty.png"> </a>
+- This Site is hosted on <a style="color: #8a4af3;" href='https://vercel.com/'> Vercel </a> 
+- Current Version: <b style="color: #8a4af3;"> 1.0.0 </b>
+
+#
+
+<h2 id="run-project"> 
+   👨‍💻 | How to use
+</h2>
+
+### Open your Git Terminal and clone this repository
+
+```git
+  $ git clone "git@github.com:Samuel-Ricardo/bolao-da-copa_api.git"
+```
+
+### Make Pull
+
+```git
+  $ git pull "git@github.com:Samuel-Ricardo/bolao-da-copa_api.git"
+```
+
+
+You need to have `NodeJS` on your machine and a package manager (`npm`, `yarn`, or other...) to interpret the code and install the dependecies.
+
+> <a target="_blank" href="https://nodejs.org/en/"> <img width="48px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" /> </a>
+
+
+```bash
+  
+  # To install all the dependencies 
+  $ yarn  
+  $ npm install
+
+  # To run the project
+  $ yarn run dev
+  $ npm run dev
+
+```
+
+#
+
 <h2 id="autor">
   :octocat: | Author:  
 </h2>
