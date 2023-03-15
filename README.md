@@ -25,7 +25,7 @@
   |&nbsp;&nbsp;
   <a style="color: #8a4af3;" href="#project">Project</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a style="color: #8a4af3;" href="#techs">Technologies</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a style="color: #8a4af3;" href="#app">Site</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;
+  <a style="color: #8a4af3;" href="#routes">Routes</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;
   <a style="color: #8a4af3;" href="#run-project">Run</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;
   <a style="color: #8a4af3;" href="#author">Author</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
 </p>
@@ -58,7 +58,7 @@
 
 <h2>  | :artificial_satellite: About:  </h2>
 
-<p align="center">
+<p align="justfy">
   ...
 </p>
 
@@ -74,3 +74,41 @@
 
 #
 
+<p id="routes"/>
+
+##  :construction: API Routes:
+
+<h3><b> Base URL - https://bolao-da-copa-nlw.onrender.com </b></h3>
+
+<br>
+
+- <b> Users Routes - /users </b>
+
+  <p> - Count - [GET]: /count  </p>
+
+#
+
+- <b> Auth Routes - / </b>
+
+  <p> - Auth - [GET]: /me  </p>
+  <p> - Register - [POST]: /users  </p>
+
+# 
+
+- <b> Betting groups Routes - / </b>
+
+  <p> - Count - [GET]: /pool/count' </p>
+  <p> - Get Pools - [POST]: /pools  </p>
+
+#
+
+- <b> Games Routes - /pools </b>
+
+  <p> - Get games - [GET]: /:id/games' </p>
+  
+#
+
+- <b> Guesses Routes - / </b>
+
+  <p> - Count  - [GET]: /guesses/count' </p>
+  <p> - Get Pools - [POST]: /pools/:poolId/games/:gameId/guesses  </p>    
