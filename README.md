@@ -60,11 +60,11 @@
 <h2>  | :artificial_satellite: About:  </h2>
 
 <p align="justfy">
-  This is a API that uses the NestJS framework, has as target service all this project applications (Web & Mobile). This application use Google Auth API to make login with a google account and JWT to keep authenticated for a while and agree a security auth, certificating that is the right user.
+ This is an API that uses the NestJS framework, it aims to serve all applications of this project (Web & Mobile). This app uses the Google Auth API to login with a Google account and JWT to keep the authentication for a while and provide a security authentication, making sure you are the right user without having to log in all the time.
 </p>
 
 <p align="justfy">
-  For database manegement was chosen the Prisma that abstract all the hard work and let us focus on the creative and structural part, with a security migration scheme (as a .git history for database alterations) provide a solid system that are compatible with too many databases. To server was used Fastfy instead express or other.
+  For database management we chose Prisma which abstracts all the hard work and lets us focus on the creative and structural part, with a safe migrations scheme (like a .git history but for database changes) it provides a solid system and compatible with many databases. For the server Fastify was used instead of express or other.
 </p>
 
 #
