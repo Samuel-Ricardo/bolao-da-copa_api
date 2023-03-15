@@ -111,4 +111,37 @@
 - <b> Guesses Routes - / </b>
 
   <p> - Count  - [GET]: /guesses/count' </p>
-  <p> - Get Pools - [POST]: /pools/:poolId/games/:gameId/guesses  </p>    
+  <p> - Get Pools - [POST]: /pools/:poolId/games/:gameId/guesses  </p>
+
+#
+
+<p align="justfy">
+	All routes have error coverage, some are accessible only to authenticated users.
+</p>
+   
+#
+
+   
+<h2 id="autor">
+  :octocat: | Author:  
+</h2>
+
+> <a target="_blank" href="https://www.linkedin.com/in/samuel-ricardo-cabral/"> <img width="350px" src="https://github.com/Samuel-Ricardo/bolao-da-copa/raw/main/readme_files/IMG_20220904_220148_188.jpg"/> <br> <p> <b> - Samuel Ricardo</b> </p></a>
+
+<h1>
+  <a herf='https://github.com/Samuel-Ricardo'>
+    <img src='https://img.shields.io/static/v1?label=&message=Samuel%20Ricardo&color=black&style=for-the-badge&logo=GITHUB'> 
+  </a>
+  
+  <a herf='https://www.instagram.com/samuel_ricardo.ex/'>
+    <img src='https://img.shields.io/static/v1?label=&message=Samuel.ex&color=black&style=for-the-badge&logo=instagram'> 
+  </a>
+  
+  <a herf='https://twitter.com/SamuelR84144340'>
+    <img src='https://img.shields.io/static/v1?label=&message=Samuel%20Ricardo&color=black&style=for-the-badge&logo=twitter'> 
+  </a>
+  
+   <a herf='https://www.linkedin.com/in/samuel-ricardo-cabral/'>
+    <img src='https://img.shields.io/static/v1?label=&message=Samuel%20Ricardo&color=black&style=for-the-badge&logo=LinkedIn'> 
+  </a>
+</h1>
