@@ -1,4 +1,4 @@
-# bolao-da-copa_api
+# Bolão da Copa - [API]
 
 <p align="center"> 
   <a target="_blank" href="https://www.rocketseat.com.br/">
@@ -15,6 +15,7 @@
 </h4>
 
 #
+
 <br>
 
 <p align="center"><img src="https://github.com/rocketseat-education/nlw-copa-ignite/raw/main/.github/logo.svg"/></p>
@@ -118,16 +119,25 @@
 <p align="justfy">
 	All routes have error coverage, some are accessible only to authenticated users.
 </p>
-   
+  
 #
 
-<h2 id="app">
-  💻 | Application:
+<h2 id="techs">
+  💻 | Technologies:
 </h2>
 
-> <a href="https://bolao-da-copa-xi.vercel.app/"> <img src="./readme_files/empty.png"> </a>
-- This Site is hosted on <a style="color: #8a4af3;" href='https://vercel.com/'> Vercel </a> 
-- Current Version: <b style="color: #8a4af3;"> 1.0.0 </b>
+<p> - JavaScript</p>  
+<p> - TypeScript</p>
+<p> - NodeJS</p>
+<p> - NestJS</p>
+<p> - Prisma</p>
+<p> - Fastfy</p>
+<p> - CORS</p>
+<p> - JWT</p>
+<p> - zod</p>
+<p> - short-unique-id</p>  
+
+> Among Others...
 
 #
 
