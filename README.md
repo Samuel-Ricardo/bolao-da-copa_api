@@ -60,7 +60,11 @@
 <h2>  | :artificial_satellite: About:  </h2>
 
 <p align="justfy">
-  ...
+  This is a API that uses the NestJS framework, has as target service all this project applications (Web & Mobile). This application use Google Auth API to make login with a google account and JWT to keep authenticated for a while and agree a security auth, certificating that is the right user.
+</p>
+
+<p align="justfy">
+  For database manegement was chosen the Prisma that abstract all the hard work and let us focus on the creative and structural part, with a security migration scheme (as a .git history for database alterations) provide a solid system that are compatible with too many databases. To server was used Fastfy instead express or other.
 </p>
 
 - Hosted on: <a  style="color: #8a4af3;" href="https://bolao-da-copa-nlw.onrender.com">Bolão da Copa - [API] </a> 
