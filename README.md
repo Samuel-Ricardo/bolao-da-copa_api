@@ -67,12 +67,15 @@
   For database manegement was chosen the Prisma that abstract all the hard work and let us focus on the creative and structural part, with a security migration scheme (as a .git history for database alterations) provide a solid system that are compatible with too many databases. To server was used Fastfy instead express or other.
 </p>
 
+#
+
 - Hosted on: <a  style="color: #8a4af3;" href="https://bolao-da-copa-nlw.onrender.com">Bolão da Copa - [API] </a> 
 
  - Repo: [Front-end] - <a style="color: #8a4af3;" href="https://github.com/Samuel-Ricardo/bolao-da-copa">Bolão Da Copa - [Landing Page]</a>
  - Repo: [Mobile] - <a style="color: #8a4af3;" href="https://github.com/Samuel-Ricardo/bolao-da-copa_mobile">Bolão Da Copa - [APP]</a>
   
-  <br>
+ #
+ <br>
 
 - This API is hosted on <a target="_blank" style="color: #8a4af3;" href='https://render.com/'> Render </a> 
 - Current Version <b> 1.0.0 </b>
@@ -116,7 +119,7 @@
 - <b> Guesses Routes - / </b>
 
   <p> - Count  - [GET]: /guesses/count' </p>
-  <p> - Get Pools - [POST]: /pools/:poolId/games/:gameId/guesses  </p>
+  <p> - Get Guesses - [POST]: /pools/:poolId/games/:gameId/guesses  </p>
 
 #
 
@@ -129,6 +132,10 @@
 <h2 id="techs">
   💻 | Technologies:  
 </h2>
+
+  > <a href='https://nestjs.com/'> <img width='40px' src='https://d33wubrfki0l68.cloudfront.net/e937e774cbbe23635999615ad5d7732decad182a/26072/logo-small.ede75a6b.svg'> </a>
+
+  <br>
 
 <p> - Google APIs</p>
 <p> - Google Auth</p>
