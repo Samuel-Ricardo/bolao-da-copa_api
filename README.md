@@ -123,9 +123,11 @@
 #
 
 <h2 id="techs">
-  💻 | Technologies:
+  💻 | Technologies:  
 </h2>
 
+<p> - Google APIs</p>
+<p> - Google Auth</p>
 <p> - JavaScript</p>  
 <p> - TypeScript</p>
 <p> - NodeJS</p>
@@ -136,7 +138,9 @@
 <p> - JWT</p>
 <p> - zod</p>
 <p> - short-unique-id</p>  
+<p> - .env variables</p>
 
+<br>
 > Among Others...
 
 #
