@@ -61,3 +61,16 @@
 <p align="center">
   ...
 </p>
+
+- Hosted on: <a  style="color: #8a4af3;" href="https://bolao-da-copa-nlw.onrender.com">Bolão da Copa - [API] </a> 
+
+ - Repo: [Front-end] - <a style="color: #8a4af3;" href="https://github.com/Samuel-Ricardo/bolao-da-copa">Bolão Da Copa - [Landing Page]</a>
+ - Repo: [Mobile] - <a style="color: #8a4af3;" href="https://github.com/Samuel-Ricardo/bolao-da-copa_mobile">Bolão Da Copa - [APP]</a>
+  
+  <br>
+
+- This API is hosted on <a target="_blank" style="color: #8a4af3;" href='https://render.com/'> Render </a> 
+- Current Version <b> 1.0.0 </b>
+
+#
+
